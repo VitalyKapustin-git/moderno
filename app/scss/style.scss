@@ -1,3 +1,369 @@
-@import 'vars';
-@import 'global';
-@import 'fonts';
+@import "vars";
+@import "global";
+@import "fonts";
+
+.header__text {
+  margin-left: auto;
+  margin-right: 50px;
+  .need-help {
+    color: $red;
+  }
+}
+
+.header__top-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 90px;
+}
+
+.header__btn {
+  width: 70px;
+  border-radius: 5px;
+  color: white;
+  text-align: center;
+  font-size: 12px;
+  padding: 4px;
+}
+.header__btn-login {
+  background-color: $green;
+}
+.header__btn-reg {
+  background-color: $red;
+  margin-left: 7px;
+}
+
+.header__menu {
+  background: $bg;
+
+  .menu__list {
+    display: flex;
+    height: 60px;
+    align-items: center;
+
+    li {
+      display: inline-block;
+
+      & ~ li {
+        padding-left: 40px;
+      }
+
+      a {
+        color: white;
+        font-size: 14px;
+      }
+    }
+  }
+}
+
+.search {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  min-height: 530px;
+}
+
+.search__inner {
+  padding: 160px 0 100px;
+
+  color: white;
+  text-align: center;
+
+  &-title {
+    margin-bottom: 10px;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 72px;
+  }
+
+  &-text {
+    margin-bottom: 50px;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 30px;
+  }
+
+  &-form {
+    max-width: 670px;
+    margin: 0 auto;
+
+    position: relative;
+    input {
+      display: block;
+      width: 100%;
+      box-shadow: 0px 1px 10px 0px rgba(139, 185, 87, 0.75);
+      border-radius: 4px;
+      height: 56px;
+      border: none;
+      font-size: 14px;
+      font-weight: 500;
+      padding-left: 25px;
+      padding-right: 60px;
+      &:focus {
+        border: 1px solid $green;
+      }
+    }
+    button {
+      position: absolute;
+      border: none;
+      background: transparent;
+      right: 12px;
+      top: 18px;
+    }
+  }
+}
+
+// start products
+
+.products {
+  padding: 110px 0;
+  background-color: $gray;
+}
+
+.products__inner-box {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.products__inner-btn {
+  text-align: center;
+  margin-bottom: 60px;
+  font-size: 14px;
+  button {
+    padding: 12px 20px;
+    background-color: white;
+    border: none;
+    color: $bg;
+    cursor: pointer;
+
+    & + button {
+      margin-left: 5px;
+    }
+
+    &.mixitup-control-active {
+      background-color: $red;
+      color: white;
+    }
+  }
+}
+
+.product__item {
+  max-width: 442px;
+  width: 100%;
+  box-shadow: 0px 1px 2px 0px rgba(205, 214, 222, 0.75);
+  background-color: white;
+  margin-bottom: 30px;
+
+  &-img {
+    min-height: 250px;
+    background-repeat: no-repeat;
+    display: block;
+    background-position: center;
+    background-size: cover;
+  }
+
+  &-content {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 30px;
+    min-height: 90px;
+    align-items: center;
+    border-bottom: 1px solid rgb(205, 214, 222);
+  }
+
+  &-name {
+    max-width: 310px;
+  }
+
+  &-title {
+    color: $bg;
+    font-weight: 500;
+    display: block;
+    font-size: 18px;
+  }
+
+  &-category {
+    color: $green;
+    font-size: 14px;
+    font-weight: 700;
+  }
+
+  &-price {
+    color: $bg;
+    font-size: 18px;
+    font-weight: 700;
+  }
+
+  &-info {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 30px;
+    min-height: 70px;
+    align-items: center;
+  }
+
+  &-author {
+    .avatar {
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      background-position: center;
+      display: inline-block;
+      background-repeat: no-repeat;
+      background-size: cover;
+      margin-right: 14px;
+    }
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    max-width: 245px;
+  }
+}
+
+.products__bottom-btn {
+  text-align: center;
+  button {
+    padding: 20px 30px;
+    background-color: white;
+    margin: 45px 5px 0;
+    border: none;
+    color: $bg;
+    cursor: pointer;
+    font-size: 16px;
+    box-shadow: 0px 1px 3px 0px rgba(204, 216, 228, 0.75);
+    &.mixitup-control-active {
+      background-color: $red;
+      color: white;
+    }
+  }
+}
+
+// end products
+
+// start slider
+
+.slider__inner.slick-initializeds.slick-slider.slick-dotted .slick-list.draggable {
+    display: flex !important;
+    justify-content: space-around !important;
+}
+
+.slick-track::before,
+.slick-track::after {
+  display: none;
+}
+
+.rate-star {
+  display: inline-block;
+  margin-right: 13px;
+  & + span {
+    color: $bg;
+  }
+}
+
+.slider {
+  padding: 100px 0;
+}
+//   .slick-slide {
+//       visibility: hidden;
+
+//       &.slick-active {
+//           visibility: visible;
+//       }
+//   }
+
+.slick-slide.slick-active > div {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.slider__inner {
+  &-item {
+    max-width: 442px;
+    width: 100%;
+    box-shadow: 0px 1px 2px 0px rgba(205, 214, 222, 0.75);
+    background-color: white;
+    margin-bottom: 30px;
+  }
+
+  &-img {
+    min-height: 250px;
+    background-repeat: no-repeat;
+    display: block;
+    background-position: center;
+    background-size: cover;
+  }
+
+  &-content {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 30px;
+    min-height: 90px;
+    align-items: center;
+    border-bottom: 1px solid rgb(205, 214, 222);
+  }
+
+  &-name {
+    max-width: 310px;
+  }
+
+  &-title {
+    color: $bg;
+    font-weight: 500;
+    display: block;
+    font-size: 18px;
+  }
+
+  &-category {
+    color: $green;
+    font-size: 14px;
+    font-weight: 700;
+  }
+
+  &-price {
+    color: $bg;
+    font-size: 18px;
+    font-weight: 700;
+  }
+
+  &-info {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 30px;
+    min-height: 70px;
+    align-items: center;
+  }
+
+  &-author {
+    .avatar {
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      background-position: center;
+      display: inline-block;
+      background-repeat: no-repeat;
+      background-size: cover;
+      margin-right: 14px;
+    }
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+  }
+
+  .slick-dots li {
+    background-color: $gray;
+    border-radius: 50%;
+    cursor: pointer;
+
+    & button::before {
+      content: none;
+    }
+
+    &.slick-active {
+      background: $green;
+    }
+  }
+}
+
+// end slider
