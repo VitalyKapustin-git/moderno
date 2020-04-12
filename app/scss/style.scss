@@ -368,6 +368,9 @@
 
 // end slider
 
+
+// start advanteres
+
 .advanteges {
     background-color: $bg;
     padding: 110px 0;
@@ -413,8 +416,6 @@
         }
     }
 
-
-
     &-image {
         width: 113px;
         height: 113px;
@@ -439,3 +440,54 @@
     }
 
 }
+
+// end advanteres
+
+// author start
+
+.author {
+    min-height: 761px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.author__box {
+    min-height: 220px;
+    max-width: 650px;
+    width: 100%;
+    background-color: $green;
+    display: flex;
+    justify-content: space-between;
+    padding: 70px 60px 80px;
+    align-items: center;
+
+    &-text {
+        font-weight: 300;
+        display: inline-block;
+        max-width: 265px;
+        color: white;
+        font-size: 30px;
+        line-height: 36px;
+        margin-right: 20px;
+    }
+
+    &-href {
+        display: inline-block;
+        background-color: white;
+        padding: 24px 45px;
+        font-size: 18px;
+    }
+
+}
+
+// author end
+
+// turotials start
+
+
+
+// tutorials end
