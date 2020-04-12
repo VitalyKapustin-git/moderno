@@ -244,8 +244,8 @@
 // start slider
 
 .slider__inner.slick-initializeds.slick-slider.slick-dotted .slick-list.draggable {
-    display: flex !important;
-    justify-content: space-around !important;
+  display: flex !important;
+  justify-content: space-around !important;
 }
 
 .slick-track::before,
@@ -368,77 +368,74 @@
 
 // end slider
 
-
 // start advanteres
 
 .advanteges {
-    background-color: $bg;
-    padding: 110px 0;
+  background-color: $bg;
+  padding: 110px 0;
 }
 
 .advantages__title {
-    color: white;
-    padding-bottom: 80px;
+  color: white;
+  padding-bottom: 80px;
 }
 
 .advantages__inner {
-    display: flex;
-    justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
 }
 
 .advantages__item {
-    max-width: 360px;
-    width: 100%;
-    text-align: center;
+  max-width: 360px;
+  width: 100%;
+  text-align: center;
 
+  .svg1 svg {
+    width: 50px;
+  }
 
-    .svg1 svg {
-        width: 50px;
+  .svg2 svg {
+    width: 70px;
+  }
+
+  .svg3 svg {
+    width: 87px;
+  }
+
+  &:hover {
+    .advantages__item-image {
+      background-color: $green;
+      svg g {
+        fill: white !important;
+      }
     }
-
-    .svg2 svg {
-        width: 70px;
+    .advantages__item-title {
+      color: $green;
     }
+  }
 
-    .svg3 svg {
-        width: 87px;
-    }
+  &-image {
+    width: 113px;
+    height: 113px;
+    border-radius: 50%;
+    background-color: white;
 
-    &:hover {
-        .advantages__item-image {
-            background-color: $green;
-            svg g {
-                fill: white !important;
-            }
-        }
-        .advantages__item-title {
-            color: $green;
-        }
-    }
-
-    &-image {
-        width: 113px;
-        height: 113px;
-        border-radius: 50%;
-        background-color: white;
-
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        align-items: center;
-        margin: 0 auto 30px;
-    }
-    &-title {
-        color: white;
-        font-weight: 400;
-        line-height: 30px;
-        padding: 20px 0;
-        font-size: 24px;
-    }
-    &-text {
-        color: #b0bec5;
-    }
-
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto 30px;
+  }
+  &-title {
+    color: white;
+    font-weight: 400;
+    line-height: 30px;
+    padding: 20px 0;
+    font-size: 24px;
+  }
+  &-text {
+    color: #b0bec5;
+  }
 }
 
 // end advanteres
@@ -446,48 +443,247 @@
 // author start
 
 .author {
-    min-height: 761px;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  min-height: 761px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .author__box {
-    min-height: 220px;
-    max-width: 650px;
-    width: 100%;
-    background-color: $green;
-    display: flex;
-    justify-content: space-between;
-    padding: 70px 60px 80px;
-    align-items: center;
+  min-height: 220px;
+  max-width: 650px;
+  width: 100%;
+  background-color: $green;
+  display: flex;
+  justify-content: space-between;
+  padding: 70px 60px 80px;
+  align-items: center;
 
-    &-text {
-        font-weight: 300;
-        display: inline-block;
-        max-width: 265px;
-        color: white;
-        font-size: 30px;
-        line-height: 36px;
-        margin-right: 20px;
-    }
+  &-text {
+    font-weight: 300;
+    display: inline-block;
+    max-width: 265px;
+    color: white;
+    font-size: 30px;
+    line-height: 36px;
+    margin-right: 20px;
+  }
 
-    &-href {
-        display: inline-block;
-        background-color: white;
-        padding: 24px 45px;
-        font-size: 18px;
-    }
-
+  &-href {
+    display: inline-block;
+    background-color: white;
+    padding: 24px 45px;
+    font-size: 18px;
+  }
 }
 
 // author end
 
 // turotials start
 
+.tutorial {
+  padding: 60px 0 120px;
+}
 
+.tutorial__inner {
+  display: flex;
+  justify-content: center;
+}
+
+.tutorial__item {
+  max-width: 370px;
+  min-height: 370px;
+
+  & + & {
+    margin-left: 30px;
+  }
+
+  &-img {
+    width: 370px;
+    height: 270px;
+    display: block;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  &-title {
+    display: block;
+    text-align: center;
+    background-color: #f8f8f8;
+    padding: 30px 10px;
+    font-size: 24px;
+    color: $bg;
+    font-weight: 700;
+  }
+}
 
 // tutorials end
+
+// start footer
+
+.footer {
+  background-color: $bg;
+}
+
+.footer__inner {
+  display: flex;
+  justify-content: space-between;
+  padding: 110px 0 90px;
+}
+
+.footer__col {
+  max-width: 270px;
+  width: 100%;
+  &-title {
+    color: white;
+    font-size: 22px;
+    font-family: "Raleway", sans-serif;
+    padding-bottom: 22px;
+    margin-bottom: 30px;
+    position: relative;
+    &::after {
+      position: absolute;
+      content: "";
+      bottom: 0;
+      left: 2px;
+      width: 51px;
+      height: 3px;
+      background-color: $green;
+    }
+  }
+
+  &-list {
+    max-width: 220px;
+    a {
+      margin-bottom: 13px;
+      padding-left: 22px;
+      position: relative;
+      &::before {
+        font-family: "icomoon";
+        position: absolute;
+        content: "\f054";
+        color: $green;
+        font-size: 14px;
+        left: 0;
+      }
+    }
+  }
+
+  &-text,
+  &-menu a {
+    color: #b7c3c8;
+  }
+}
+
+.footer__copy {
+  border-top: 1px solid #697378;
+  &-text {
+    text-align: center;
+    padding: 25px 0;
+    size: 15px;
+    color: #919699;
+  }
+}
+
+.footer__info {
+  font-family: "Lato", sans-serif;
+  color: white;
+  font-size: 14px;
+  margin-top: 18px;
+  position: relative;
+  padding-left: 30px;
+  &::before {
+    position: absolute;
+    left: 0;
+    content: "\f041";
+    font-family: "icomoon";
+    color: $green;
+    font-size: 18px;
+  }
+  &-phone::before {
+    content: "\f095";
+  }
+}
+
+.footer__social-link {
+  margin-bottom: 33px;
+  li {
+    display: inline-block;
+    & + li {
+      margin-left: 7px;
+    }
+  }
+  a {
+    width: 28px;
+    height: 28px;
+    & + a {
+      margin-left: 7px;
+    }
+  }
+
+  .fb {
+    background: url(../img/social.png) -56px -0;
+  }
+  .tw {
+    background: url(../img/social.png) -28px -28px;
+  }
+  .yt {
+    background: url(../img/social.png) -0 -28px;
+  }
+  .pt {
+    background: url(../img/social.png) -28px -0;
+  }
+  .li {
+    background: url(../img/social.png);
+  }
+}
+
+.footer__form {
+  &-title {
+    font-size: 20px;
+    color: white;
+    margin-bottom: 20px;
+  }
+  form {
+    position: relative;
+    input {
+      border: none;
+      background-color: #2f3c43;
+      display: block;
+      height: 46px;
+      width: 100%;
+      font-size: 14px;
+      color: #fff;
+      padding-left: 16px;
+      padding-right: 50px;
+      &::placeholder {
+        color: #697378;
+      }
+    }
+    button {
+      position: absolute;
+      top: 0;
+      right: 0;
+      height: 46px;
+      width: 46px;
+      background-color: $green;
+      border: none;
+      cursor: pointer;
+      &::before {
+        content: "\e900";
+        position: absolute;
+        font-family: "icomoon";
+        color: #fff;
+        font-size: 20px;
+        text-align: center;
+        top: 11px;
+        left: 13px;
+      }
+    }
+  }
+}
+
+// end footer
